@@ -7,7 +7,8 @@
     <style>
         body{
             margin:0;
-            display:flex;
+            background-color: rgb(201, 201, 201);
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .header{
@@ -45,10 +46,92 @@
 
         }
         .header-below-the-header{
+            background-color: rgb(6, 32, 83);
+            width:100%;
+            height:35px;
+            color: white;
+            display:flex;
+            align-items: center;
+            padding-left:10px;
+            gap:20px;
+        }
+
+        .header-below-the-header button{
+            background-color: rgb(6, 32, 83);
+            border-color:2px solid rgb(6, 32, 83);
+            cursor:pointer;
+            border-style: solid;
+            height:35px;
+            width:auto;
+            transition:border-color 0.3s ease;
+            color: white;
+        }
+
+        .header-below-the-header button:hover{
+            border-color: white;
+        }
+
+        .flexboxforvideo{
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+        }
+
+        .flexboxforsquarebox{
+            display:flex;
+            justify-content:space-evenly;
+
 
         }
 
+        .squarebox{
+            width:250px;
+            height:300px;
+            border:2px;
+            justify-content:space-evenly;
+            text-align: center;
+            background-color:white;
+        }
 
+        .squarebox img{
+            height:100px;
+            width:100px;
+        }
+
+        p{
+            padding-bottom:10px;
+        }
+
+        footer{
+            padding-top:500px;
+            width:100%;
+            height:400px;
+            display:flex;           
+        }
+
+        .Squareforfooter{
+            text-align: center;
+            background-color:rgb(3, 17, 46) ;
+            width:33.33%;
+            height: 400px;
+            color:white;
+        }
+        
+        .Squareforfooter2{
+            text-align: center;
+            background-color:rgb(128, 129, 129) ;
+            width:33.33%;
+            height: auto;
+            color:white;
+        }
+
+        .Squareforfooter3{
+            text-align: center;
+            background-color:rgb(211, 211, 211) ;
+            width:33.33%;
+            height: auto;
+            color:rgb(94, 94, 94);
+        }
     </style>
 </head>
 
@@ -67,13 +150,97 @@
     <form>
         <label name="lang1">Language</label>
         <select name="Lang1" id="Lang">
-        <option >🟨⬜🛞⬜🟩En</option>
-        <option >🟨⬜🛞⬜🟩हिन्दी</option>
-        <option >🟨⬜🛞⬜🟩தமிழ்</option>
-        <option >🟨⬜🛞⬜🟩ಕನ್ನಡ</option>
+        <option >🟨🛞🟩 En</option>
+        <option >🟨🛞🟩 हिन्दी</option>
+        <option >🟨🛞🟩 தமிழ்</option>
+        <option >🟨🛞🟩 ಕನ್ನಡ</option>
         </select>
     </form> 
-
     </div>
+    <div class="header-below-the-header">
+        <button>All</button>
+        <button>MX player</button>
+        <button>Sell</button>
+        <button>Best Sellers</button>
+        <button>Todays Deal</button>
+        <button>Mobile</button>
+        <button>Fashion</button>
+        <button>Books</button>
+        <button>Computer</button>
+        <button>Customer services</button>
+        <button>Electronics</button>
+        <button>New Realeses</button>
+        <button>Amazon Pay</button>
+        <button>Haome & Kitchen</button>
+        <button>Video Games</button>
+        <button>Home Improvement</button>
+        <button>Cars</button>
+        <button>Motorcycle</button>
+        <button>Amazon Pay</button>
+    </div>
+
+
+
+
+    <div class="flexboxforvideo">
+    <video autoplay loop muted height="500px" width="1100px" src="I built this me brick-by-brick.mp4"></video>
+    </div>
+    <div class="flexboxforsquarebox">
+        <div class="squarebox">
+            <p>Pickup where you left off</p>
+            <img src="phone (1).jpg" alt="">
+            <img src="phone (2).jpg" alt="">
+            <img src="phone (3).jpg" alt="">
+            <img src="phone (4).jpg" alt="">
+        </div>
+        <div class="squarebox">
+            <p>Keep shopping for</p>
+            <img src="SBC (1).jpg" alt="">
+            <img src="SBC (2).jpg" alt="">
+            <img src="SBC (3).jpg" alt="">
+            <img src="SBC (4).jpg" alt="">
+            
+        </div>
+        <div class="squarebox">
+            <p>Babies 90% off</p>
+            <img src="Baby (1).jpg" alt="">
+            <img src="Baby (2).jpg" alt="">
+            <img src="Baby (3).jpg" alt="">
+            <img src="Baby (4).jpg" alt="">
+            
+        </div>
+        <div class="squarebox">
+            <p>Butterfly knives 20% off</p>
+            <img src="Butterfly knifes (1).jpg" alt="">
+            <img src="Butterfly knifes (2).jpg" alt="">
+            <img src="Butterfly knifes (3).jpg" alt="">
+            <img src="Butterfly knifes (4).jpg" alt="">
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="Squareforfooter">
+            <ul style="list-style-type:none;">
+                <li>Get to know us</li>
+                <li>About amazon</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+        <div class="Squareforfooter2">
+            <ul style="list-style-type:none;">
+                <li>Connect with us</li>
+                <li>facebook</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div class="Squareforfooter3">
+            <ul style="list-style-type:none;">
+                <li>Make money with us</li>
+                <li>Sell on amazon</li>
+                <li>Sell under amazon</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
